@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script src="script.js"></script>
+        <script
+            src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js"
+            defer>
+        </script>
+        <link rel="stylesheet" href="style.css">
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    </head>
+
+    <body>
+            <div>
+            <model-viewer
+                class="vrContent"
+                style="width:100vw;height:150vw;max-width:95%;"
+                src="anemotex.gltf"
+                ios-src="anemotex.usdz"
+                alt=""
+                shadow-intensity="0.1"
+                exposure=".7"
+                camera-controls
+                environment-image="background.jpg"
+                auto-rotate
+                ar>
+                <input type="image" src="black.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/>
+            </model-viewer>
+            </div>
+    </body>
+</html>
+
+<p class="textContent"> *우측의 AR 아이콘을 눌러 증강현실로 작품을 감상해보세요. </p>
+
+<!-- 모델 쉐입이나 텍스쳐 디테일추가해야하고 지면에서 높이도 더 띄워야 함 -->
